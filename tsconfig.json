@@ -1,23 +1,37 @@
 {
     "compilerOptions": {
-        "noImplicitAny": false,
         "module": "commonjs",
         "target": "es5",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "noLib": false,
+        "noEmitHelpers": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "declaration": true,
+        "declaration": false,
         "moduleResolution": "node",
         "noUnusedLocals": true,
         "types": [
             "jasmine"
         ],
         "lib": [
-            "es2016"
-        ]
+            "es6",
+            "dom"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "./node_modules/tns-core-modules/*",
+                "./node_modules/*"
+            ]
+        }
     },
     "exclude": [
         "test",
         "node_modules",
-        "bundles"
+        "bundles",
+        "platforms"
     ]
 }

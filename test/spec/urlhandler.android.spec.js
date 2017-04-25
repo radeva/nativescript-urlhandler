@@ -17,7 +17,7 @@ describe('Android', function () {
   describe('handleIntent', function () {
 
     it('function should be defined', function () {
-      expect(handleOpenURL).toBeDefined();
+      expect(handleIntent).toBeDefined();
     });
 
     it('should handle empty data', function () {
